@@ -10,37 +10,54 @@
   </head>
   <body>
     <header>
-      <span>ABOUT</span>
-      <span>PROJECTS</span>
-      <span>CONTACT</span>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
     </header>
-    <section class="hero">
+    <section id="hero">
       <canvas class="hero-canvas"></canvas>
       <h1 class="hero-title">
         Hello I'm <span class="hlred"> Renato. </span>
         <br />
-        I'm a full stack web developer
+        I'm a full stack web developer.
       </h1>
+      <a href="#about" class="scroll-down-btn">
+        See More
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+        </svg>
+      </a>
     </section>
-    <section class="about">
-      <img src="./img/about.jpg" />
+    <section id="about">
+      <h1 class="about-title">About me</h1>
       <div class="about-main">
-        <h1>< Developer /></h1>
-        <div class="about-info">
-          <h1 class="hlred">About</h1>
+        <div class="about-bio-container">
+          <div class="about-img-container">
+            <img src="./img/about.jpg" alt="" />
+            <div class="typewriter">&lt Developer /></div>
+          </div>
           <div class="about-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores ipsa,
             cumque eos ab consequatur amet expedita. Ea possimus mollitia iste officiis
             voluptate. Sit aliquid, recusandae maxime aut sed reprehenderit quis veritatis
             repudiandae debitis iusto amet vitae corrupti praesentium molestiae at dolore
             officiis exercitationem corporis repellendus nobis inventore. Ratione iste
-            nihil sapiente consequatur autem obcaecati maxime alias aliquam ad aliquid
-            corporis asperiores nisi, ut ex assumenda.
+            nihil sapiente consequatur autem.
           </div>
         </div>
       </div>
     </section>
-    <section class="projects"></section>
-    <section class="contact"></section>
+    <section id="projects"></section>
+    <section id="contact"></section>
   </body>
 </html>
