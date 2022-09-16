@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(49, 49, 49) #141517;
+}
