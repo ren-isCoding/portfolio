@@ -1,5 +1,5 @@
-const drawHeroCanvas = function () {
-  const canvas = document.querySelector(".hero-canvas"),
+function drawHeroCanvas() {
+  const canvas = document.querySelector("#hero-canvas"),
     ctx = canvas.getContext("2d"),
     colorDot = [
       "rgb(81, 162, 233)",

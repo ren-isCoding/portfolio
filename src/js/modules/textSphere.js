@@ -366,7 +366,7 @@ const Texts = [
   "JAVASCRIPT",
   "REACT",
   "SASS",
-  "NODEJS",
+  "NODE.JS",
   "EXPRESS",
   "MONGODB",
   "MONGOOSE",
@@ -375,7 +375,7 @@ const Texts = [
   "GIT",
 ]
 
-TagCloud(".Sphere", Texts, {
+TagCloud("#text-sphere", Texts, {
   // Sphere radius in px
   radius: 400,
 
