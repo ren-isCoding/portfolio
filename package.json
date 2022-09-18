@@ -1,11 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html && parcel watch src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
