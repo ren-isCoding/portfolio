@@ -1,6 +1,6 @@
 #about {
   position: relative;
-  height: 90%;
+  height: 100%;
   width: 100%;
   top: 100%;
   z-index: 1;
@@ -84,9 +84,27 @@
   }
 }
 
-.typewriter {
+.typewriter-container {
   position: absolute;
   font-size: 4rem;
+  display: flex;
+}
+
+#typewriter {
+  border-right: 0.1rem solid whitesmoke;
+  animation: blink 0.75s step-end infinite;
+  width: max-content;
+  white-space: nowrap;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: whitesmoke;
+  }
 }
 
 .about-desc {
@@ -122,7 +140,7 @@
     z-index: -1;
   }
 }
-.Sphere {
+#text-sphere {
   @media (max-width: 600px) {
     position: absolute;
     scale: 0.5;

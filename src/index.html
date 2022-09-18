@@ -15,7 +15,7 @@
       <a href="#contact">CONTACT</a>
     </header>
     <section id="hero">
-      <canvas class="hero-canvas"></canvas>
+      <canvas id="hero-canvas"></canvas>
       <h1 class="hero-title">
         Hello I'm <span class="hlred"> Renato. </span>
         <br />
@@ -44,7 +44,11 @@
         <div class="about-bio-container">
           <div class="about-img-container">
             <img src="./img/about.jpg" alt="" />
-            <div class="typewriter">&lt Developer /></div>
+            <div class="typewriter-container">
+              <span>&lt&nbsp</span>
+              <span id="typewriter"> </span>
+              <span>&nbsp/></span>
+            </div>
           </div>
           <div class="about-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores ipsa,
@@ -57,13 +61,16 @@
         </div>
         <div class="about-skills-container">
           <h1 class="about-skills-title">Skills</h1>
-          <span class="Sphere"></span>
+          <span id="text-sphere"></span>
           <script src="./js/modules/textSphere.js"></script>
         </div>
       </div>
     </section>
-    <canvas class="bg-canvas"></canvas>
-    <section id="projects"></section>
+    <canvas id="bg-canvas"></canvas>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="project-container"></div>
+    </section>
     <section id="contact"></section>
   </body>
 </html>
