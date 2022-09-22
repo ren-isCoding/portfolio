@@ -11,6 +11,22 @@
   </head>
   <body>
     <header>
+      <btn id="top-btn">
+        TOP
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M17 11l-5-5-5 5M17 18l-5-5-5 5" />
+        </svg>
+      </btn>
       <a href="#about">ABOUT</a>
       <a href="#projects">PROJECTS</a>
       <a href="#contact">CONTACT</a>
@@ -22,7 +38,7 @@
         <br />
         I'm a full stack web developer.
       </h1>
-      <a href="#about" class="scroll-down-btn">
+      <a href="#about" class="hero-btn">
         See more
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,16 +78,112 @@
         </div>
         <div class="about-skills-container">
           <h1 class="about-skills-title">Skills</h1>
+
           <span id="text-sphere"></span>
-          <script src="./js/modules/textSphere.js"></script>
         </div>
       </div>
     </section>
-    <canvas id="bg-canvas"></canvas>
     <section id="projects">
-      <h1>Projects</h1>
-      <div class="project-container"></div>
+      <h1 class="about-title">Projects</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="slide swiper-slide">
+            <div class="project-container">
+              <div class="project-info">
+                <h1>Shopping Website</h1>
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                  velit aut incidunt quos repellendus, illum illo quia officia, in iusto
+                  tempora veniam, nulla excepturi sunt sed optio est error itaque.</span
+                >
+              </div>
+              <div class="project-img-container">
+                <img src="./img/project1.png" />
+              </div>
+              <div class="project-options">
+                <a
+                  href="https://renkzk.github.io/shopping-cart/"
+                  target="_blank"
+                  class="red-btn"
+                  >Live App</a
+                >
+                <a
+                  href="https://github.com/renkzk/shopping-cart"
+                  target="_blank"
+                  class="red-btn"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="project-container">
+              <div class="project-info">
+                <h1>CV Generator</h1>
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                  velit aut incidunt quos repellendus, illum illo quia officia, in iusto
+                  tempora veniam, nulla excepturi sunt sed optio est error itaque.</span
+                >
+              </div>
+              <div class="project-img-container">
+                <img src="./img/project2.png" />
+              </div>
+              <div class="project-options">
+                <a
+                  href="https://renkzk.github.io/cv-application/"
+                  target="_blank"
+                  class="red-btn"
+                  >Live App</a
+                >
+                <a
+                  href="https://github.com/renkzk/cv-application"
+                  target="_blank"
+                  class="red-btn"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="project-container">
+              <div class="project-info">
+                <h1>Memory Game</h1>
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                  velit aut incidunt quos repellendus, illum illo quia officia, in iusto
+                  tempora veniam, nulla excepturi sunt sed optio est error itaque.</span
+                >
+              </div>
+              <div class="project-img-container">
+                <img src="./img/project3.png" />
+              </div>
+              <div class="project-options">
+                <a
+                  href="https://renkzk.github.io/Memory-Game/"
+                  target="_blank"
+                  class="red-btn"
+                  >Live App</a
+                >
+                <a
+                  href="https://github.com/renkzk/Memory-Game"
+                  target="_blank"
+                  class="red-btn"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-nav-btn"></div>
+        <div class="swiper-button-prev swiper-nav-btn"></div>
+        <div class="swiper-pagination swiper-bullet-btn"></div>
+      </div>
     </section>
+    <canvas id="bg-canvas"></canvas>
     <section id="contact"></section>
+    <script src="./js/modules/textSphere.js"></script>
+    <script src="./js/modules/swiper.js"></script>
+    <script></script>
   </body>
 </html>
