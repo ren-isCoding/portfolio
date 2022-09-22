@@ -1,24 +1,25 @@
 #about {
   position: relative;
-  height: 100%;
-  width: 100%;
+  margin: 0 10rem;
+  min-height: 100%;
+  max-width: 100%;
   top: 100%;
   z-index: 1;
   background: rgb(22, 22, 27);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  gap: 1rem;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @media (max-width: 1500px) {
-    height: fit-content;
-    padding-top: 5rem;
+    gap: 5rem;
+    margin: 0;
   }
 }
 
 .about-title {
-  top: 10%;
+  margin-top: 7rem;
   position: relative;
   color: whitesmoke;
   font-weight: 600;
@@ -43,13 +44,13 @@
 }
 
 .about-main {
-  height: fit-content;
-  width: 100%;
+  padding: 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (max-width: 1500px) {
     flex-direction: column;
+    gap: 5rem;
   }
 }
 
@@ -156,6 +157,9 @@
   font-family: "Bebas Neue", cursive;
   font-size: 2.5rem;
   width: 20rem;
+  @media (max-width: 600px) {
+    font-size: 4rem;
+  }
 }
 
 .tagcloud--item {

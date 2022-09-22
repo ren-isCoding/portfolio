@@ -1,10 +1,3 @@
-.hero-canvas {
-  background-color: #141517;
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-}
 #hero {
   height: 100%;
   width: 100%;
@@ -15,39 +8,10 @@
   gap: 2rem;
   position: fixed;
 }
+
 .hero-title {
   color: whitesmoke;
   text-align: center;
   font-weight: 300;
   font-size: 4rem;
-}
-
-.scroll-down-btn {
-  position: relative;
-  color: whitesmoke;
-  text-decoration: none;
-  display: flex;
-  border: solid 0.1rem whitesmoke;
-  padding: 1rem 2rem;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  transition: ease-in-out 200ms;
-  overflow: hidden;
-  &:hover {
-    color: #141517;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.648);
-    right: 100%;
-    transition: ease-in-out 200ms;
-    z-index: -1;
-  }
-  &:hover::before {
-    right: 0%;
-  }
 }

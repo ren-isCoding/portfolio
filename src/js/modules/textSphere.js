@@ -369,7 +369,7 @@ const Texts = [
   "NODE.JS",
   "EXPRESS",
   "MONGODB",
-  "MONGOOSE",
+  "WEBPACK",
   "TYPESCRIPT",
   "BOOTSTRAP",
   "GIT",
