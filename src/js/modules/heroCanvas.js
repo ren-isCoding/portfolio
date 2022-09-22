@@ -10,7 +10,7 @@ function drawHeroCanvas() {
     ],
     color = "rgb(81, 162, 233)"
 
-  canvas.width = document.body.scrollWidth
+  canvas.width = window.innerWidth
   canvas.height = window.innerHeight
   canvas.style.display = "block"
   ctx.lineWidth = 0.3
