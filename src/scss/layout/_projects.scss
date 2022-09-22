@@ -9,6 +9,35 @@
   z-index: 1;
 }
 
+.projects-title {
+  margin-top: 7rem;
+  position: relative;
+  color: whitesmoke;
+  @media (max-width: 600px) {
+    position: absolute;
+    margin-top: 20rem;
+  }
+  font-weight: 600;
+  &::before {
+    content: "";
+    width: 200%;
+    height: 0.1rem;
+    background-color: rgba(245, 245, 245, 0.47);
+    position: absolute;
+    right: 110%;
+    top: 50%;
+  }
+  &::after {
+    content: "";
+    width: 200%;
+    height: 0.1rem;
+    background-color: rgba(245, 245, 245, 0.47);
+    position: absolute;
+    left: 110%;
+    top: 50%;
+  }
+}
+
 .slide {
   display: flex;
   flex-direction: column;
