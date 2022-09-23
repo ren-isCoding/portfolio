@@ -142,6 +142,7 @@
   }
 }
 #text-sphere {
+  cursor: grab;
   @media (max-width: 600px) {
     position: absolute;
     scale: 0.5;
