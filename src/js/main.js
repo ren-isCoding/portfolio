@@ -1,6 +1,9 @@
-import drawHeroCanvas from "./modules/heroCanvas"
 import drawBgCanvas from "./modules/bgCanvas"
-import animateTypeDelete from "./modules/typeDeleteAnimation"
+import drawHeroCanvas from "./modules/heroCanvas"
+import animateTyping from "./modules/typingAnimation"
+import updateHeader from "./modules/header"
+
 drawBgCanvas()
 drawHeroCanvas()
-animateTypeDelete()
+updateHeader()
+animateTyping()
