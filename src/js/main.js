@@ -1,9 +1,9 @@
 import drawBgCanvas from "./modules/bgCanvas"
 import drawHeroCanvas from "./modules/heroCanvas"
 import animateTyping from "./modules/typingAnimation"
-import updateHeader from "./modules/header"
+import updateNavBar from "./modules/navBar"
 
 drawBgCanvas()
 drawHeroCanvas()
-updateHeader()
+updateNavBar()
 animateTyping()

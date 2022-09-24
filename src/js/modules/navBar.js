@@ -1,34 +1,36 @@
-function updateHeader() {
+function updateNavBar() {
   let scrollPosition = window.scrollY
-  const header = document.querySelector("header")
+  const header = document.querySelector("#nav-bar")
   const topBtn = document.querySelector("#top-btn")
   topBtn.addEventListener("click", (e) => scrollToTop())
 
-  function addClassOnScroll() {
-    header.classList.add("background")
+  function hideNavBarElements() {
+    header.classList.remove("background")
+    topBtn.classList.remove("show")
   }
 
-  function removeClassOnScroll() {
-    header.classList.remove("background")
+  function showNavBarElements() {
+    header.classList.add("background")
+    topBtn.classList.add("show")
   }
 
   window.addEventListener("scroll", function () {
     scrollPosition = window.scrollY
 
     if (scrollPosition > 900) {
-      addClassOnScroll()
+      showNavBarElements()
     } else {
-      removeClassOnScroll()
+      hideNavBarElements()
     }
   })
 
   onload = (e) => {
     scrollPosition = window.scrollY
 
-    if (scrollPosition > 923) {
-      addClassOnScroll()
+    if (scrollPosition > 900) {
+      showNavBarElements()
     } else {
-      removeClassOnScroll()
+      hideNavBarElements()
     }
   }
 
@@ -38,4 +40,4 @@ function updateHeader() {
   }
 }
 
-export default updateHeader
+export default updateNavBar
