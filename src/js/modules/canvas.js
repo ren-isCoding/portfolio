@@ -1,4 +1,4 @@
-function drawHeroCanvas() {
+function drawCanvas() {
   const canvas = document.querySelector("#hero-canvas"),
     ctx = canvas.getContext("2d"),
     colorDot = [
@@ -162,9 +162,13 @@ function drawHeroCanvas() {
 
     // first dot to be blue
     dots.array[0].colour = "#51a2e9"
-
-    dot.line()
     dot.animate()
+
+    // connect lines only in hero section
+    let scrollPosition = window.scrollY
+    if (scrollPosition < 1000) {
+      dot.line()
+    }
   }
 
   window.onmousemove = function (parameter) {
@@ -188,8 +192,8 @@ function drawHeroCanvas() {
 
   window.onresize = function () {
     clearInterval(draw)
-    drawHeroCanvas()
+    drawCanvas()
   }
 }
 
-export default drawHeroCanvas
+export default drawCanvas
