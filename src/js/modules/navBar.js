@@ -14,7 +14,7 @@ function updateNavBar() {
     topBtn.classList.add("show")
   }
 
-  window.addEventListener("scroll", function () {
+  window.addEventListener("scroll", (e) => {
     scrollPosition = window.scrollY
 
     if (scrollPosition > 900) {
