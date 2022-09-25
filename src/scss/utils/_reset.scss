@@ -25,6 +25,12 @@ a {
   color: inherit;
 }
 
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(49, 49, 49) black;
