@@ -14,7 +14,6 @@
       <btn id="top-btn" class="section-link">
         TOP
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -43,7 +42,6 @@
       <a href="#about" class="hero-btn">
         See more
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -182,8 +180,33 @@
         <div class="swiper-pagination swiper-bullet-btn"></div>
       </div>
     </section>
-    <canvas id="bg-canvas"></canvas>
-    <section id="contact"></section>
+    <section id="contact">
+      <h1 class="contact-title">Contact Me</h1>
+      <p class="contact-text">
+        If you want to work together or have a question send me an email and I'll get back
+        to you as soon as possible.
+      </p>
+      <form
+        id="contact-form"
+        action="https://formsubmit.co/7fce08743e3f141c76c4fd2a45052db9"
+        method="POST"
+      >
+        <input id="name-input" type="text" name="Name" placeholder="Name" />
+        <input id="email-input" type="email" name="Email" placeholder="Email" />
+        <textarea id="message-input" name="Message" placeholder="Your Message"></textarea>
+        <div class="form-footer">
+          <div id="error-container"></div>
+          <button id="contact-btn" type="submit">
+            Send
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M20.563 3.34a1.002 1.002 0 0 0-.989-.079l-17 8a1 1 0 0 0 .026 1.821L8 15.445v6.722l5.836-4.168 4.764 2.084a1 1 0 0 0 1.399-.85l1-15a1.005 1.005 0 0 0-.436-.893zm-2.466 14.34-5.269-2.306L16 9.167l-7.649 4.25-2.932-1.283 13.471-6.34-.793 11.886z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
     <script src="./js/modules/textSphere.js"></script>
     <script src="./js/modules/swiper.js"></script>
     <script></script>
