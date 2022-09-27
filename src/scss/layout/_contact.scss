@@ -92,13 +92,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
   width: 14rem;
   height: 4rem;
   justify-self: flex-end;
   align-self: flex-start;
   font-size: 1.7rem;
+  font-weight: 400;
   border: none;
   border-radius: 0;
   margin-top: 1rem;
+  cursor: pointer;
+  position: relative;
+  border: 0.2rem solid whitesmoke;
+  overflow: hidden;
+  transition: 300ms;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    z-index: 1;
+  }
+
+  svg {
+    transition: 300ms;
+  }
+
+  &::before {
+    content: "";
+    width: 300%;
+    height: 300%;
+    background-color: rgb(32, 33, 45);
+    position: absolute;
+    right: 100%;
+    bottom: 100%;
+    rotate: 15deg;
+    transition: 400ms;
+  }
+
+  &:hover::before {
+    right: -15%;
+    bottom: 0;
+  }
+
+  &:hover {
+    color: whitesmoke;
+    svg {
+      color: whitesmoke;
+    }
+  }
 }
