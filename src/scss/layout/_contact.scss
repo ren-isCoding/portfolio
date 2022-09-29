@@ -13,26 +13,22 @@
   margin-top: 15rem;
   margin-bottom: 5rem;
   position: relative;
-  color: whitesmoke;
+
   @media (max-width: 600px) {
     margin-top: 20rem;
   }
   font-weight: 600;
-  &::before {
-    content: "";
-    width: 170%;
-    height: 0.1rem;
-    background-color: rgba(245, 245, 245, 0.47);
-    position: absolute;
-    right: 110%;
-    top: 50%;
-  }
+  &::before,
   &::after {
     content: "";
     width: 170%;
     height: 0.1rem;
-    background-color: rgba(245, 245, 245, 0.47);
     position: absolute;
+    right: 110%;
+    top: 50%;
+    background-color: rgb(75, 75, 75);
+  }
+  &::after {
     left: 110%;
     top: 50%;
   }
@@ -42,6 +38,7 @@
   text-align: center;
   width: 50rem;
   padding: 1rem;
+  color: rgb(197, 197, 197);
 }
 
 #contact-form {
@@ -123,11 +120,12 @@
     content: "";
     width: 300%;
     height: 300%;
-    background-color: rgb(32, 33, 45);
+    background-color: rgb(21, 21, 21);
+
     position: absolute;
     right: 100%;
     bottom: 100%;
-    rotate: 15deg;
+    rotate: 25deg;
     transition: 400ms;
   }
 

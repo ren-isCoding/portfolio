@@ -19,23 +19,17 @@
 .about-title {
   margin-top: 7rem;
   position: relative;
-  color: whitesmoke;
-  font-weight: 600;
-  &::before {
-    content: "";
-    width: 200%;
-    height: 0.1rem;
-    background-color: rgba(245, 245, 245, 0.47);
-    position: absolute;
-    right: 110%;
-    top: 50%;
-  }
+  &::before,
   &::after {
     content: "";
     width: 200%;
     height: 0.1rem;
-    background-color: rgba(245, 245, 245, 0.47);
     position: absolute;
+    right: 110%;
+    top: 50%;
+    background-color: rgb(81, 162, 233);
+  }
+  &::after {
     left: 110%;
     top: 50%;
   }
@@ -107,7 +101,7 @@
 }
 
 .about-desc {
-  color: whitesmoke;
+  color: rgb(197, 197, 197);
   max-width: 60rem;
 }
 

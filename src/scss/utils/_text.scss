@@ -1,7 +1,7 @@
 @use "./mixins";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 html {
   font-size: 62.5%;
 
@@ -18,8 +18,14 @@ body {
   color: whitesmoke;
 }
 
-.typewriter-container {
+#typewriter {
   font-family: "Source Code Pro", monospace;
+}
+
+.section-title {
+  color: whitesmoke;
+  font-family: "Major Mono Display", monospace;
+  font-size: 3rem;
 }
 
 .hlred {
