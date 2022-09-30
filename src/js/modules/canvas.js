@@ -41,22 +41,22 @@ function drawCanvas() {
   } else if (windowSize > 800) {
     dots = {
       nb: 530,
-      distance: 55,
-      d_radius: 250,
+      distance: 0,
+      d_radius: 0,
       array: [],
     }
   } else if (windowSize > 600) {
     dots = {
       nb: 480,
-      distance: 45,
-      d_radius: 150,
+      distance: 0,
+      d_radius: 0,
       array: [],
     }
   } else {
     dots = {
       nb: 270,
-      distance: 45,
-      d_radius: 140,
+      distance: 0,
+      d_radius: 0,
       array: [],
     }
   }
