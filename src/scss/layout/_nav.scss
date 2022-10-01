@@ -6,7 +6,7 @@ nav {
   align-items: center;
   gap: 1rem;
   z-index: 10;
-  transition: 200ms ease-in;
+  transition: 0.2 ease-in;
 
   &.background {
     background-color: rgba(0, 0, 0, 0.563);
@@ -50,7 +50,7 @@ nav {
   align-items: center;
   justify-content: center;
   top: -100%;
-  transition: 200ms ease-in;
+  transition: 0.3s 0.1s ease-in-out;
   margin-left: 5rem;
   cursor: pointer;
   pointer-events: none;
