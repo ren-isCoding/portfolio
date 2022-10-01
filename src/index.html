@@ -7,7 +7,9 @@
     <title>Renato || Full Stack Web Developer</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./scss/main.scss" />
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" defer src="./js/main.js"></script>
+    <script defer src="./js/modules/textSphere.js"></script>
+    <script defer src="./js/modules/swiper.js"></script>
   </head>
   <body>
     <!-- NAVIGATION BAR -->
@@ -28,21 +30,21 @@
         </svg>
       </btn>
       <div class="section-links">
-        <a class="section-link" href="#about">ABOUT</a>
-        <a class="section-link" href="#projects">PROJECTS</a>
-        <a class="section-link" href="#contact">CONTACT</a>
+        <a class="section-link hidden" href="#about">ABOUT</a>
+        <a class="section-link hidden" href="#projects">PROJECTS</a>
+        <a class="section-link hidden" href="#contact">CONTACT</a>
       </div>
     </nav>
 
     <!-- HERO SECTION -->
     <section id="hero">
       <canvas id="hero-canvas"></canvas>
-      <h1 class="hero-title">
+      <h1 class="hero-title hidden">
         Hello I'm <span class="hlred"> Renato. </span>
         <br />
         I'm a full stack web developer.
       </h1>
-      <a href="#about" class="hero-btn">
+      <a href="#about" class="hero-btn hidden">
         See more
         <svg
           width="24"
@@ -64,7 +66,7 @@
       <h1 class="about-title section-title">About me</h1>
       <div class="about-main">
         <div class="about-bio-container">
-          <div class="about-img-container">
+          <div class="about-img-container hidden">
             <img src="./img/about.jpg" alt="" />
             <div class="typewriter-container">
               <span>&lt&nbsp</span>
@@ -72,7 +74,7 @@
               <span>&nbsp/></span>
             </div>
           </div>
-          <div class="about-desc">
+          <div class="about-desc hidden">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores ipsa,
             cumque eos ab consequatur amet expedita. Ea possimus mollitia iste officiis
             voluptate. Sit aliquid, recusandae maxime aut sed reprehenderit quis veritatis
@@ -82,9 +84,8 @@
           </div>
         </div>
         <div class="about-skills-container">
-          <h1 class="about-skills-title">Skills</h1>
-
-          <span id="text-sphere"></span>
+          <h1 class="about-skills-title hidden">Skills</h1>
+          <span id="text-sphere" class="hidden"></span>
         </div>
       </div>
     </section>
@@ -182,8 +183,8 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next swiper-nav-btn"></div>
-        <div class="swiper-button-prev swiper-nav-btn"></div>
+        <div class="swiper-button-next swiper-nav-btn hidden"></div>
+        <div class="swiper-button-prev swiper-nav-btn hidden"></div>
         <div class="swiper-pagination swiper-bullet-btn"></div>
       </div>
     </section>
@@ -225,7 +226,7 @@
         </div>
       </form>
       <footer>
-        Designed & Built by renkzk
+        designed & built by renkzk
         <div class="footer-btns">
           <a href="https://github.com/renkzk">
             <svg fill="currentColor" class="footer-svg">
@@ -244,8 +245,5 @@
         </div>
       </footer>
     </section>
-    <!-- SCRIPTS -->
-    <script src="./js/modules/textSphere.js"></script>
-    <script src="./js/modules/swiper.js"></script>
   </body>
 </html>
