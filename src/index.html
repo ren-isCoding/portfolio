@@ -192,7 +192,7 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
       <h1 class="contact-title section-title">contact me</h1>
-      <p class="contact-text">
+      <p class="contact-text hidden">
         If you want to work together or have a question send me an email and I'll get back
         to you as soon as possible.
       </p>
@@ -201,12 +201,30 @@
         action="https://formsubmit.co/7fce08743e3f141c76c4fd2a45052db9"
         method="POST"
       >
-        <input id="name-input" type="text" name="Name" placeholder="Name" />
-        <input id="email-input" type="email" name="Email" placeholder="Email" required />
-        <textarea id="message-input" name="Message" placeholder="Your Message"></textarea>
+        <input
+          id="name-input"
+          class="hidden"
+          type="text"
+          name="Name"
+          placeholder="Name"
+        />
+        <input
+          id="email-input"
+          class="hidden"
+          type="email"
+          name="Email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          id="message-input"
+          class="hidden"
+          name="Message"
+          placeholder="Your Message"
+        ></textarea>
         <div class="form-footer">
           <div id="error-container"></div>
-          <button id="contact-btn" type="submit">
+          <button id="contact-btn" class="hidden" type="submit">
             <p>
               Send
               <svg

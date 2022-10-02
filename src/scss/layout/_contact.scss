@@ -102,8 +102,9 @@
   cursor: pointer;
   position: relative;
   border: 0.2rem solid whitesmoke;
+  background-color: whitesmoke;
   overflow: hidden;
-  transition: 0.3s;
+  color: black;
 
   p {
     display: flex;
@@ -111,10 +112,11 @@
     justify-content: center;
     gap: 0.8rem;
     z-index: 1;
+    transition: 0.3s;
   }
 
   svg {
-    transition: 0.3s;
+    transition: 0.4s;
   }
 
   &::before {
