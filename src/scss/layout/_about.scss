@@ -41,6 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 7rem;
   @media (max-width: 1500px) {
     flex-direction: column;
     gap: 5rem;
@@ -62,7 +63,6 @@
 }
 
 .about-img-container {
-  margin-left: 2rem;
   position: relative;
   width: fit-content;
   display: grid;
@@ -103,7 +103,7 @@
 
 .about-desc {
   color: rgb(197, 197, 197);
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .about-skills-container {

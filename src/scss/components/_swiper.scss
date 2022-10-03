@@ -648,3 +648,9 @@ button.swiper-pagination-bullet {
     display: none;
   }
 }
+
+.swiper-bullet-btn {
+  @media (max-width: 600px) {
+    margin-bottom: 10rem;
+  }
+}

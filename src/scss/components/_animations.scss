@@ -48,6 +48,10 @@
   }
 }
 
+.about-desc {
+  transition-delay: 0.2s;
+}
+
 #text-sphere {
   transform: scale(0);
   transition: all 1s 1.5s;

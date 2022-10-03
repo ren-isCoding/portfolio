@@ -16,8 +16,8 @@ nav {
     margin-right: 5rem;
     display: flex;
     gap: 2rem;
-    @media (max-width: 400px) {
-      margin-right: 1rem;
+    @media (max-width: 600px) {
+      margin-right: 2rem;
     }
   }
 }
@@ -54,8 +54,8 @@ nav {
   margin-left: 5rem;
   cursor: pointer;
   pointer-events: none;
-  @media (max-width: 400px) {
-    margin-left: 1rem;
+  @media (max-width: 600px) {
+    margin-left: 2rem;
   }
 
   &.show {
