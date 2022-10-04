@@ -29,9 +29,14 @@ input,
 button,
 textarea {
   font-family: inherit;
+  user-select: auto !important;
 }
 
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(49, 49, 49) black;
+
+  @media (max-width: 600px) {
+    user-select: none;
+  }
 }
