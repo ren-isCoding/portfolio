@@ -650,6 +650,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-bullet-btn {
+  position: relative !important;
   @media (max-width: 600px) {
     margin-bottom: 10rem;
   }
