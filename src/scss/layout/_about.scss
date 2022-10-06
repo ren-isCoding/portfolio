@@ -136,9 +136,9 @@
 }
 #text-sphere {
   cursor: grab;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     position: absolute;
-    scale: 0.5;
+    scale: 0.6;
   }
   @media (max-width: 300px) {
     position: absolute;
@@ -151,7 +151,7 @@
   font-family: "Bebas Neue", cursive;
   font-size: 2.5rem;
   width: 20rem;
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     font-size: 4rem;
   }
 }
