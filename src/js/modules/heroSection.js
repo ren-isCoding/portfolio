@@ -16,9 +16,9 @@ function updateHeroSection() {
   window.addEventListener("scroll", (e) => {
     scrollPosition = window.scrollY
 
-    if (scrollPosition > 900) {
+    if (scrollPosition > 1000) {
       hideText()
-    } else if (scrollPosition < 900) {
+    } else if (scrollPosition < 1000) {
       showText()
     }
   })

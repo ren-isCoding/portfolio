@@ -13,8 +13,7 @@
   margin-top: 7rem;
   position: relative;
   @media (max-width: 600px) {
-    position: absolute;
-    margin-top: 19rem;
+    margin-top: 15rem;
   }
   font-weight: 600;
   &::before,
@@ -36,10 +35,6 @@
 .slide {
   display: flex;
   flex-direction: column;
-  @media (max-width: 1000px) {
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 .project-container {
@@ -65,7 +60,8 @@
   align-items: center;
 
   img {
-    height: 50rem;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
