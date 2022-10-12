@@ -85,6 +85,11 @@
 #error-container {
   width: 100%;
   color: red;
+
+  .success {
+    margin-top: 1rem;
+    color: rgb(0, 231, 0);
+  }
 }
 
 #contact-btn {
