@@ -40,34 +40,36 @@ function validateForm() {
     checkIfEmpty(emailInput)
     checkIfEmpty(messageInput)
 
-    let formData = {
-      subject: `(Portfolio) You've got a new message.`,
-      name: nameInput.value,
-      email: emailInput.value,
-      message: `
-      From: ${emailInput.value},
-      \n
-      Name: ${nameInput.value}, 
-      \n
-      Message: ${messageInput.value}`,
-    }
+    // Code for backend
 
-    // Create a new XML HTTP request
-    let xhr = new XMLHttpRequest()
-    // Post the formData Object to the backend via JSON format
-    xhr.open("POST", "/")
-    xhr.setRequestHeader("content-type", "application/json")
-    xhr.onload = function () {
-      if (xhr.responseText === "success") {
-        showSuccessMessage()
-        clearForm()
-      } else {
-        alert("Something went wrong")
-      }
-    }
+    // let formData = {
+    //   subject: `(Portfolio) You've got a new message.`,
+    //   name: nameInput.value,
+    //   email: emailInput.value,
+    //   message: `
+    //   From: ${emailInput.value},
+    //   \n
+    //   Name: ${nameInput.value},
+    //   \n
+    //   Message: ${messageInput.value}`,
+    // }
 
-    // Stringify json for backend
-    xhr.send(JSON.stringify(formData))
+    // // Create a new XML HTTP request
+    // let xhr = new XMLHttpRequest()
+    // // Post the formData Object to the backend via JSON format
+    // xhr.open("POST", "/")
+    // xhr.setRequestHeader("content-type", "application/json")
+    // xhr.onload = function () {
+    //   if (xhr.responseText === "success") {
+    //     showSuccessMessage()
+    //     clearForm()
+    //   } else {
+    //     alert("Something went wrong")
+    //   }
+    // }
+
+    // // Stringify json for backend
+    // xhr.send(JSON.stringify(formData))
   }
 }
 
