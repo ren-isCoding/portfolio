@@ -34,7 +34,6 @@ function validateForm() {
   }
 
   form.onsubmit = (e) => {
-    e.preventDefault()
     errorContainer.innerHTML = ""
     checkIfEmpty(nameInput)
     checkIfEmpty(emailInput)
